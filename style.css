@@ -1,0 +1,40 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    color: rgb(34, 33, 33);
+    background-color: black;
+}
+.note {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: blanchedalmond;
+    border: black;
+    display: center;
+}
+.top-bar {
+    top: 0%;
+    position: absolute;
+    height: 50px;
+    width: 500px;
+    background-color: chocolate;
+    border: none;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.down-bar {
+    height: 40px;
+    width: 480px;
+    background-color: none;
+    border-radius: 0%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    bottom: 0%;
+    position: absolute;
+}
