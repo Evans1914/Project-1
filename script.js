@@ -23,5 +23,5 @@ function createNote() {
     notesContainer.appendChild(note);
 }
 
-// Add click event to the "Add New" button
+// Add click event to the "Add New Note" button
 addButton.addEventListener('click', createNote);

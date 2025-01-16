@@ -4,7 +4,10 @@ body {
     padding: 0;
     background-color: #1f1d1d;
 }
-
+h1 {
+    text-align: center;
+    color: azure;
+  }
 .container {
     max-width: 800px;
     margin: 50px auto;
