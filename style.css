@@ -75,3 +75,59 @@ textarea {
     line-height: 18px;
     font-size: 12px;
 }
+
+.timestamp {
+    font-size: 10px;
+    color: gray;
+    text-align: right;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    font-size: 14px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+}
+.note.dragging {
+    opacity: 0.7;
+    cursor: grabbing;
+}
+
+button {
+    cursor: pointer;
+}
+   
+
+#delete-all-btn {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+#delete-all-btn:hover {
+    background-color: #ff1a1a; 
+    transform: scale(1.05); 
+}
+
+#delete-all-btn:active {
+    background-color: #cc0000; /
+    transform: scale(1); 
+}
+
+#delete-all-btn:focus {
+    outline: 2px solid #ff9999; 
+}
