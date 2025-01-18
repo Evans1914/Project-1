@@ -1,27 +1,31 @@
 const addButton = document.getElementById('add-btn');
 const notesContainer = document.getElementById('notes-container');
 
-// Function to create a new sticky note
+
 function createNote() {
-    // Create note container
+    
     const note = document.createElement('div');
     note.classList.add('note');
 
-    // Add inner content to the note
+    
     note.innerHTML = `
         <textarea placeholder="Write your note..."></textarea>
         <button class="delete-btn">&times;</button>
+        <input type="color" class="color-picker" value="#fffa91" />
     `;
 
-    // Add delete functionality
+    
     const deleteBtn = note.querySelector('.delete-btn');
     deleteBtn.addEventListener('click', () => {
         notesContainer.removeChild(note);
     });
+   
+    const colorPicker = note.querySelector('.color-picker');
+    colorPicker.addEventListener('input', (e) => {
+        note.style.backgroundColor = e.target.value;
+    });
 
-    // Append the note to the container
     notesContainer.appendChild(note);
 }
 
-// Add click event to the "Add New Note" button
 addButton.addEventListener('click', createNote);
